@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript to find Odd or Even number Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+	function myMarks()
+	{
+			marks = document.form1.txt.value;
+		switch (true)
+		{
+			case marks>=80:
+			console.log("Marks are " + marks + " and grade is A+");
+			break;
+			case marks>=70:
+			console.log("Marks are " + marks + " and grade is A");
+			break;
+			case marks>=60:
+			console.log("Marks are " + marks + " and grade is B+");
+			break;
+			case marks>=50:
+			console.log("Marks are " + marks + " and grade is B");
+			break;
+			case marks>=40:
+			console.log("Marks are " + marks + " and grade is C+");
+			break;
+			default:
+			console.log("fail");
+		}
+	}
+	</script>
+	<body>
+	<form name ="form1">
+            Enter marks: 
+			<input type="number" name="txt">
+			<br><br>
+			<input type="button" value="submit" onclick="myMarks()"/>
+	
+	
+	</body>
+	</html>
