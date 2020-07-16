@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript to find Odd or Even number Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+		function myFun()
+		{
+			var a = document.getElementById('a').value;
+			var fields = a.split(' ',2);
+			//var b = parseInt(a);
+			console.log("The OS name is " + fields[0] + " and version is " + fields[1]);
+		}
+	</script>
+	<body>
+		
+		<form>
+            Enter an OS name and version with separated by space: 
+			<input type="text" id="a" name="txt">
+			<br><br>
+			<input type="button" value="submit" onclick="myFun()"/>
+        </form>
+	</body>
+	</html>
